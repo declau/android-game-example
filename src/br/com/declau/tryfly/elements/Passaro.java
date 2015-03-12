@@ -35,14 +35,13 @@ public class Passaro {
 
 	public void cai() {
 		
-		this.altura += 2;
+		//this.altura += 2;
 		
-		/*boolean chegouNoChao = altura + RAIO > tela.getAltura();
+		boolean chegouNoChao = altura + RAIO > tela.getAltura();
 		if (!chegouNoChao) {
 		this.altura += 2;
-		}*/
-		 
-		
+		}
+		 		
 	}
 
 	public void pula() {

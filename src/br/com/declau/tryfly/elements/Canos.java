@@ -11,7 +11,7 @@ import br.com.declau.tryfly.graphic.Tela;
 public class Canos {
 	
 	private static final int QUANTIDADE_DE_CANOS = 5;
-	private static final int DISTANCIA_ENTRE_CANOS = 160;
+	private static final int DISTANCIA_ENTRE_CANOS = 200;
 	private final List<Cano> canos = new ArrayList<Cano>();
 	private Tela tela;
 	private Pontuacao pontuacao;
@@ -22,7 +22,7 @@ public class Canos {
 		this.tela = tela;
 		this.pontuacao = pontuacao;
 		this.context = context;
-		int posicao = 250;
+		int posicao = 300;
 		for (int i = 0; i < QUANTIDADE_DE_CANOS; i++) {
 			posicao += DISTANCIA_ENTRE_CANOS;
 			Cano cano = new Cano(tela, posicao, context);
@@ -43,6 +43,7 @@ public class Canos {
 		while(iterator.hasNext()){
 			Cano cano = iterator.next();
 			cano.move();
+			
 			if (cano.saiuDaTela()) {
 				pontuacao.aumenta();
 				//cria outro cano

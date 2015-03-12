@@ -13,7 +13,7 @@ public class Cano {
 	
 	private Tela tela;
 	private int alturaDoCanoInferior;
-	private static final int TAMANHO_DO_CANO = 160;
+	private static final int TAMANHO_DO_CANO = 150;
 	private static final int LARGURA_DO_CANO = 100;
 	private static final Paint VERDE = Cores.getCorDoCano();
 	private int posicao;
@@ -33,7 +33,7 @@ public class Cano {
 
 	private int valorAleatorio() {
 		
-		return (int)(Math.random() * 150);
+		return (int)(Math.random() * 200);
 	}
 
 	public void desenhaNo(Canvas canvas) {
